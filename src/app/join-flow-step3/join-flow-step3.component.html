@@ -1,0 +1,187 @@
+<div class="page-wrap">
+    <div class="login-sec vh-100 cf">
+        <div class="logo-login text-center cf">
+            <figure>
+                <a href=""><img src="assets/images/logo.png"></a>
+            </figure>
+        </div>
+        <div class="position-relative login-outer-main d-lg-flex justify-content-center flex-column cf">
+            <div class="step-numbers text-center cf">
+                <a href=""><i class="icon-back"></i></a>
+                <span>03/03</span>
+            </div>
+            <div class="step-outer-sec">
+                <div class="step-bxs-main cf">
+                    <h2>Activate My Account</h2>
+                    <div class="general-bx">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                                <div class="account-form cf">
+                                    <form>
+                                        <div class="form-group cf">
+                                            <input type="text" id="pnumber" class="pnumber" class="is-form-control" placeholder="Phone Number">
+                                        </div>
+                                        <div class="form-group cf">
+                                            <input type="text" id="add1" class="add1" class="is-form-control" placeholder="Address1">
+                                        </div>
+                                        <div class="form-group cf">
+                                            <input type="text" id="add2" class="add2" class="is-form-control" placeholder="Address2">
+                                        </div>
+                                        <div class="form-group cf">
+                                            <select class="is-form-select selectpicker">
+                                                <option selected>Select City</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group cf">
+                                            <select class="is-form-select selectpicker">
+                                                <option selected>Select State</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group cf">
+                                            <div class="row">
+                                                <div class="col-6"><input type="text" id="zipcode" class="zipcode" class="is-form-control" placeholder="Zip Code"></div>
+                                                <div class="col-6">
+                                                    
+                                                    <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                                                        <input class="testb is-form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group cf">
+                                            <input type="text" id="add2" class="ssn" class="is-form-control" placeholder="Enter SSN Number">
+                                        </div>
+                                        <div class="note-info">
+                                            <i class="fa fa-exclamation-circle"></i>required by the credit bureaus to qualify for credit building benefits
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                                <div class="method-account cf">
+                                    <h4><figure><img src="assets/images/method-ico1.png"></figure>METHOD OF PAYMENT</h4>
+                                    <div class="method-bx mb-4 cf">
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Payment Option</span>
+                                            <small>Credit Card</small>
+                                        </div>
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Mastercard ***3258</span>
+                                            <div class="circle-btn">
+                                                <a href="" class="width30 font18">
+                                                    <i class="icon-trash"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span><a href="javascript:void(0)" (click)="open(content)">Add New</a></span>
+                                        </div>
+                                    </div>
+
+                                    <h4><figure><img src="assets/images/method-ico1.png"></figure>pricing summary</h4>
+                                    <div class="method-bx cf">
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Total Spending Limit:</span>
+                                            <small>$200.00</small>
+                                        </div>
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Today's Purchase:</span>
+                                            <small>$20.00</small>
+                                        </div>
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Credit Remaining:</span>
+                                            <small>$180.00</small>
+                                        </div>
+                                        <div class="pay-style d-flex justify-content-between">
+                                            <span>Monthly Auto-pay:</span>
+                                            <small>$5.00</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-bxs-main text-center cf">
+                    <button type="submit" class="main-btn lg-btn  mt-2 mb-3">
+                        FINISH
+                    </button>
+                    <p class="no-login">Hi Sarah you are logged in.. If you want to  <a href="">Logout</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="addNewModalLabel">Add New Payment</h2>
+            
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group cf">
+                    <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Card Number">
+                </div>
+                <div class="form-group cf">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-5 col-lg-5 pr-1">
+                            <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Exp. Month">
+                        </div>
+                        <div class="col-md-5 col-lg-5 pr-1 pl-1">
+                            <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Exp. Year">
+                        </div>
+                        <div class="col-md-2 col-lg-2 pl-1">
+                            <input type="text" id="numb" name="numb" class="is-form-control" placeholder="CVC">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-start">
+            <button type="button" class="main-btn sm-btn">Save changes</button>
+            <button type="button" class="outer-main-btn sm-btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-basic-title">Add New Payment</h2>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-group cf">
+                <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Card Number">
+            </div>
+            <div class="form-group cf">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-5 col-lg-5 pr-1">
+                        <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Exp. Month">
+                    </div>
+                    <div class="col-md-5 col-lg-5 pr-1 pl-1">
+                        <input type="text" id="numb" name="numb" class="is-form-control" placeholder="Exp. Year">
+                    </div>
+                    <div class="col-md-2 col-lg-2 pl-1">
+                        <input type="text" id="numb" name="numb" class="is-form-control" placeholder="CVC">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer d-flex justify-content-start">
+        <button type="button" class="main-btn sm-btn">Save changes</button>
+        <button type="button" class="outer-main-btn sm-btn"  (click)="modal.close('Save click')">Close</button>
+    </div>
+</ng-template>

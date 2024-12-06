@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import 'assets/scss/fonts.scss';
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/_variables-main.scss';
+@import 'assets/scss/_form-elements.scss';
+@import 'assets/scss/_mixins-new.scss';
+@import 'assets/scss/_header-footer-body.scss';
+@import 'assets/scss/_login-signup.scss';
+@import 'assets/scss/global.scss';
+@import 'assets/scss/_training-pages.scss';
+
+
+html, body { height: 100%; transition: .4s ease-in-out; overflow: visible !important; }
+
+a, a:hover, a:focus { text-decoration: none; outline: none; transition: .4s ease-in-out; }
+.main-btn{
+    @include main-btn;
+}
+.second-btn{
+    @include second-btn;
+}
+.outer-main-btn{
+    @include outer-main-btn;
+}
+.outer-dark-btn{
+    @include outer-dark-btn;
+}

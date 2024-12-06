@@ -1,0 +1,1839 @@
+.banner-sec{
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: $full-width;
+    min-height: $v-height;
+    padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+    @include bp(small-screen){
+        min-height: inherit;
+        padding-bottom: $space-30;
+    }
+    .mac-main-frame{
+        border-radius: 10px 0 0 10px;
+        padding-bottom: 15%;
+        background: #cdced2; /* Old browsers */
+        background: -moz-linear-gradient(left,  #cdced2 0%, #e7e7e7 99%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #cdced2 0%,#e7e7e7 99%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #cdced2 0%,#e7e7e7 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdced2', endColorstr='#e7e7e7',GradientType=1 ); /* IE6-9 */
+       
+        @include bp(small-screen){
+           margin-bottom: 3%;
+           border-radius: 10px;
+        }
+        .mac-black-frame{
+            background-color: $main-black;
+            border-radius: 10px 0 0 0;
+            padding: $space-15;
+            @include bp(small-screen){
+                @include border-radius($radius10);
+                padding: $space-10;
+            }
+            figure{
+                margin:0;
+                img{
+                    width: $full-width;
+                }
+            }
+            
+        }
+    }
+}
+.mac-stand-img{
+    @include bp(small-screen){
+        display: $d-none;
+    }
+}
+.landing-caption{
+    padding-right: $space-20;
+    margin-top: -25%;
+    @include bp(xxl){
+        margin-top: -10%;
+    }
+    @include bp(extra-large-screen){
+        margin-top: $space-0;
+    }
+    @include bp(medium-screen){
+        margin-top: $space-20;
+        text-align: $text-center;
+        padding: $space-0;
+        padding-bottom: $space-15;
+    }
+    @include bp(small-screen){
+        margin-top: 0;
+        padding-right: $space-0;
+        text-align: $text-center;
+    }
+    h1{
+        @include font-size($font-size80);
+        font-weight: 900;
+        color: $heading-color;
+        margin-bottom: $space-0;
+        @include bp(xxl){
+            @include font-size($font-size65);
+        }
+        @include bp(medium-screen){
+            @include font-size($font-size56);
+        }
+        @include bp(small-screen){
+            @include font-size($font-size48);
+        }
+    }
+    h2{
+        @include font-size($font-size80);
+        font-weight: 900;
+        color: $purple-color;
+        margin-bottom: $space-40;
+        @include bp(xxl){
+            @include font-size($font-size65);
+        }
+        @include bp(medium-screen){
+            @include font-size($font-size52);
+        }
+        @include bp(small-screen){
+            @include font-size($font-size40);
+        }
+    }
+    p{
+        @include font-size($font-size14);
+        font-weight: 300;
+        margin-bottom: $space-20;
+    }
+}
+.mac-outer-sec {
+    padding-right: 0;
+    position: absolute;
+    right: -15px;
+    top: 60%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    flex: 0 0 41.6666666667%;
+    max-width: 47%;
+    @include bp(xxl){
+        max-width: 40%;
+    }
+    @include bp(extra-large-screen){
+        max-width: 47%;
+    }
+    @include bp(medium-screen){
+        max-width: 80%;
+        flex: 80%;
+        margin:0px auto;
+    }
+    @include bp(medium-screen){
+        position: $po-static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        padding-right: $space-15;
+    }
+    @include bp(small-screen){
+        max-width: 100%;
+        flex: 100%;
+        margin:0px auto;
+    }
+}
+
+
+//   ***************      ABOUT US SECTION START     ***************       //
+.howwork-sec{
+    width: $full-width;
+    background-color: $footer-bg;
+    padding: $space-50 $space-0;
+    .how-work-bx{
+        padding: $space-15 $space-45;
+        width: $full-width;
+        figure{
+            margin:0;
+        }
+        h2{
+            @include font-size($font-size26);
+            color: $how-work-heading;         
+        }
+        p{
+            color: $how-desc-color;
+            @include font-size($font-size14);
+        }
+    }
+}
+
+
+//   ***************      STEP PROCESS SASS SECTION START     ***************       //
+.main-container{
+    @include bp(medium-screen){
+        display: $d-none;
+    }
+}
+.step-process-sec{
+    width: $full-width;
+    background-color: $white-color;
+    padding: $space-100 $space-0;
+    @include bp(medium-screen){
+        padding: $space-30 $space-0;
+    }
+    @include bp(small-screen){
+        padding: $space-20 $space-0;
+    }
+
+    .step-bx-rgt{
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 15%;
+        @include bp(medium-screen){
+            padding-top: $space-20;
+        }
+        @include bp(small-screen){
+            padding-top: $space-15;
+        }
+        h2{
+            @include font-size($font-size48);
+            font-weight: 900;
+            letter-spacing: 0.5px;
+                @include bp(xxl){
+                    @include font-size($font-size32);
+                }
+                @include bp(small-screen){
+                    @include font-size($font-size24);
+                }
+            span{
+                background-color: #e8d3f8;
+                width:60px;
+                height:60px;
+                @include border-radius($radius10);
+                text-align: center;
+                color: $purple-color;
+                @include font-size($font-size40);
+                display: $d-inlineBlock;
+                vertical-align: middle;
+                margin-right: $space-20;
+                padding:$space-10 $space-0;
+                line-height: 1;
+                    @include bp(xxl){
+                        width:50px;
+                        height:50px;
+                        @include font-size($font-size30);
+                    }
+                    @include bp(medium-screen){
+                        width:50px;
+                        height:50px;
+                        @include font-size($font-size30);
+                    }
+                    @include bp(small-screen){
+                        width:40px;
+                        height:40px;
+                        @include font-size($font-size22);
+                    }
+
+            }
+        }
+        p{
+            @include font-size($font-size18);
+            color: $sub-color;
+            font-weight: 300;
+            margin-bottom: $space-50;
+            line-height: 36px;
+            @include bp(xxl){
+                @include font-size($font-size18);
+                margin-bottom: $space-25;
+            }
+            @include bp(medium-screen){
+                @include font-size($font-size18);
+                margin-bottom: $space-30;
+            }
+            @include bp(small-screen){
+                @include font-size($font-size16);
+                margin-bottom: $space-15;
+            }
+        }
+        ul{
+            li{
+                @include font-size($font-size18);
+                color: $sub-color;
+                font-weight: 300;
+                position: $po-relative; 
+                margin: $space-20 $space-0 $space-30 $space-20;
+                @include bp(small-screen){
+                    @include font-size($font-size16);
+                    margin-bottom: $space-20;
+                }
+                &:before{
+                    position: $po-absolute;
+                    left: -20px;
+                    top:10px;
+                    content: '';
+                    background-color: $secondary-btn-color;
+                    width: 5px;
+                    height:5px;
+                    @include border-radius($radius100);
+                }
+            }
+        }
+        
+    }
+    .slide{
+        &:nth-child(1){
+            .step-bx-rgt{
+                vertical-align: middle;
+            }
+        }
+        
+    }
+}
+.slide{
+    // padding: $space-30 $space-0;
+    
+    @include bp(small-screen){
+        padding: $space-10 $space-0;
+    }
+    .pin-wrapper{
+        figure{
+            width: 270px;
+            display: $d-none;
+            @include bp(medium-screen){
+                display: $d-block;
+
+            }
+            @include bp(small-screen){
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+        .step-bx-rgt{
+            width: $full-width;
+            padding-top: 0;
+            @include bp(medium-screen){
+                padding-left: $space-30;
+
+            }
+            @include bp(small-screen){
+                display: $d-inlineBlock;
+                padding-left: $space-0;
+            }
+        }
+    }
+}
+
+.wrapper {
+    margin: 0 10%; 
+}
+  
+  .wrapper {
+      width: 90%;
+      margin: 0 5%;
+      @include bp(xxl){
+          width: 55%;
+          margin:0px auto;
+          right: 0;
+      }
+  }
+  
+  
+  
+  #slide01, #slide03, #slide05 {
+    background-color: #FFFFFF; 
+    @include bp(lartge-screen){
+        background-color: transparent;
+    }
+  }
+  
+  #intro, #slide02, #slide04, #slide06 {
+    background-color: #fff; 
+    @include bp(lartge-screen){
+        background-color: transparent;
+    }
+  }
+  
+  .background-container {
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+    
+      }
+  
+  
+  .intro, .slide  {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; 
+    width: 100%;
+    @include bp(medium-screen){
+        height: auto;
+        padding: $space-20 $space-0;
+    }
+  }
+  
+      .slide .pin-wrapper {
+          width: 100%;
+          height: 100%;
+          display: table;
+      }
+      .slide .wrapper {
+        position: absolute;
+        top: 55%;
+        left: 0%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%); 
+      }
+  
+  #slide02 .pin-wrapper,
+  #slide03 .pin-wrapper,
+  #slide04 .pin-wrapper,
+  #slide05 .pin-wrapper,
+  #slide06 .pin-wrapper {
+      transform: translateY(-100%);
+  }
+  .scrollmagic-pin-spacer {
+      position: absolute !important;
+      clip: rect(auto, auto, auto, auto);
+  }
+
+  //   ***************      POSITIVE IMPECT CREDIT  SASS SECTION START     ***************       //
+  .credit-impect-sec{
+      width: $full-width;
+      padding: $space-50 $space-0;
+      background-color: $white-color;
+      
+      
+      h2{
+        @include font-size($font-size48);
+        font-weight: 900;
+        letter-spacing: 0.5px; 
+        text-align: $text-center;  
+        margin-bottom: $space-40;    
+            @include bp(medium-screen){
+                @include font-size($font-size34);
+                margin-bottom: $space-30;    
+            }
+            @include bp(small-screen){
+                @include font-size($font-size24);
+                margin-bottom: $space-15;    
+            }
+      }
+      ul{
+        padding: $space-20 $space-0;
+        li{
+            position: $po-relative;
+            width: $full-width;
+            padding-left: $space-100 * 2;
+            @include bp(medium-screen){
+                padding-left: $space-0;
+            }
+            @include bp(small-screen){
+                padding-left: $space-0;
+            }
+            .impect-num{
+                width: 100px;
+                position: $po-absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    @include bp(medium-screen){
+                        width: 75px;
+                        left:0;
+                        right: 0;
+                        margin:0px auto;
+                        top:20px;
+                        transform: translateY(0%);
+                        -webkit-transform: translateY(0%);
+                        -moz-transform: translateY(0%);
+                        -ms-transform: translateY(0%);
+                    }
+                    @include bp(small-screen){
+                        width: 75px;
+                        left:0;
+                        right: 0;
+                        margin:0px auto;
+                        top:20px;
+                        transform: translateY(0%);
+                        -webkit-transform: translateY(0%);
+                        -moz-transform: translateY(0%);
+                        -ms-transform: translateY(0%);
+                    }
+            }
+            .impect-bx{
+                padding: $space-50;
+                @include bp(medium-screen){
+                    padding: $space-15;
+                    padding-top: $space-100;
+                    text-align: $text-center;
+                }
+                h3{
+                    @include font-size($font-size28);
+                    font-weight: 900;
+                    letter-spacing: 0.5px; 
+                    @include bp(medium-screen){
+                        @include font-size($font-size20);
+                    }
+                }
+                p{
+                    @include font-size($font-size22);
+                    font-weight: 300;
+                    letter-spacing: 1px; 
+                    color: $text-color;
+                    line-height: 36px;
+                    @include bp(medium-screen){
+                        @include font-size($font-size14);
+                        line-height: 30px;;
+                    }
+                }
+            }
+            &:nth-child(odd){
+                .impect-bx{
+                    background-color: #f6f6f6;
+                    @include border-radius($radius20);
+                }
+            }
+        }
+      }
+  }
+   //   ***************      DISCOVER CONTENT  SASS SECTION START     ***************       //
+   .discover-sec{
+       width: $full-width;
+       padding: $space-100 $space-0;
+       background-color: #f6f6f6;
+       position: $po-relative;
+       padding-left: 250px;
+       min-height: 80vh;
+       @include bp(medium-screen){
+           padding: $space-30 $space-0;
+           min-height: 400px;
+       }
+       h2{
+            @include font-size($font-size42);
+            font-weight: 900;
+            letter-spacing: 0.5px; 
+            margin-top: $space-0;
+            margin-bottom: 0;
+       }
+       .content-tabs{
+           width: 200px;
+           position: $po-absolute;
+           left: 0;
+           top:80px;
+           @include bp(medium-screen){
+                position: $po-static;
+                width: $full-width;
+            }
+           .nav-tabs{
+               display: $d-block;
+               border:none;
+               @include bp(medium-screen){
+                    white-space: nowrap;
+                    overflow: auto;
+                    padding-bottom: $space-15;
+                }
+               li{
+                   margin-top: $space-10;
+                    @include bp(medium-screen){
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    a{
+                        color: $heading-color;
+                        @include font-size($font-size16);
+                        font-weight: 400;
+                        border:none;
+                        margin:0;
+                        @include border-radius($radius50);
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        padding: $space-15;
+                        padding-left: $space-25;
+                        @include bp(medium-screen){
+                            min-width: 140px;
+                            margin-right: $space-10;
+                            text-align: $text-center;
+                        }
+                        @include bp(medium-screen){
+                            @include font-size($font-size14);
+                            @include border-radius($radius30);
+                            padding: $space-10;
+                        }
+                        &.active{
+                            background-color: $purple-color;
+                            color: $white-color;
+                            @include border-radius($radius50);
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            padding: $space-15;
+                            padding-left: $space-25;
+                            @include bp(medium-screen){
+                                @include font-size($font-size14);
+                                @include border-radius($radius30);
+                                padding: $space-10;
+                            }
+                        }
+                        &:hover{
+                            background-color: $purple-color;
+                            color: $white-color;
+                        }
+                    }
+               }
+           }
+       }
+
+       .land-content-bx{
+           background-color: $white-color;
+           width: $full-width;
+           @include border-radius($radius10);
+           box-shadow: 10px 0 40px 0 rgba($color: #000000, $alpha: 0.10);
+           margin: $space-30 $space-0;
+           figure{
+            @include border-radius($radius10);
+            margin:0;
+            img{
+                width: $full-width;
+                @include border-radius($radius10);
+            }
+           }
+           .card{
+               width: $full-width;
+               padding: $space-20;
+               border: none;
+               h3{
+                   @include font-size($font-size16);
+                   margin-top: $space-0;
+                   letter-spacing: 0.5px;
+               }
+               span{
+                @include font-size($font-size14);
+               }
+           }
+       }
+   }
+
+   .owl-theme.content-carousel .owl-nav{position:absolute; right:-0; top:-30px; display:block;
+        @include bp(medium-screen){
+            position: $po-static;
+            text-align: $text-center;
+        }
+    }
+   .owl-theme.content-carousel .owl-nav div { width:42px; height:42px; background-color:#fff; opacity:1; font-size:40px; color:$heading-color; text-align: center; box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.08); border-radius:100%; z-index:10; margin:0; padding:0; display: inline-block; vertical-align: top; margin-left: 15px;}
+   .owl-theme.content-carousel .owl-nav div i { position:relative; top:-10px; }
+   .owl-theme.content-carousel .owl-next:hover { background-color:$how-work-heading; color:#000; }
+   .owl-theme.content-carousel .owl-prev:hover { background-color:$how-work-heading; color:#000; }
+   .owl-theme.content-carousel .owl-nav div.disabled{opacity: 0.4;}
+   .owl-theme.content-carousel .owl-nav div.disabled:hover{background-color: $white-color;}
+
+
+   //   ***************      MEMBERSHIP PLANS LANDING SASS SECTION START     ***************       //
+   .land-member-plan-sec{
+       width: $full-width;
+       padding: $space-100 $space-0;
+       padding-bottom: $space-25;
+       background-color: $white-color;
+       @include bp(medium-screen) {
+        padding: $space-50 $space-0;       
+       }
+       @include bp(small-screen) {
+        padding: $space-30 $space-0;    
+       }
+       h2{
+            @include font-size($font-size42);
+            font-weight: 900;
+            letter-spacing: 0.5px; 
+            margin-top: $space-0;
+            text-align: $text-center;
+            margin-bottom: $space-30;
+            @include bp(medium-screen) {
+                @include font-size($font-size38);
+                margin-bottom: $space-20;      
+            }
+            @include bp(small-screen) {
+                @include font-size($font-size30);
+                margin-bottom: $space-10;
+            }
+        }
+   }
+   .member-plan-bx{
+       background-color: $white-color;
+       box-shadow: 0 0 120px 0 rgba($color: $purple-color, $alpha: 0.07);
+       width: 80%;
+       padding: $space-20 $space-30 $space-100 $space-30;
+       position: $po-relative;
+       margin:$space-50 auto;
+       @include bp(lartge-screen){
+           width: 100%;
+           margin: $space-30 auto;
+       }
+       @include bp(medium-screen) {
+            margin:$space-20 auto;
+        }
+       h4{
+            @include font-size($font-size24);
+            font-weight: 500;
+       }
+       h2{
+            @include font-size($font-size70);
+            font-weight: 900;
+            margin-top: $space-30;
+            @include bp(lartge-screen){
+                @include font-size($font-size52);
+            }
+            @include bp(medium-screen) {
+                @include font-size($font-size44);
+            }
+            small{
+                @include font-size($font-size40);
+                font-weight: 400;
+                @include bp(medium-screen) {
+                    @include font-size($font-size28);
+                }
+            }
+            sub{
+                @include font-size($font-size30);
+                font-weight: 400;
+                color: $text-color;
+                bottom: 0;
+                @include bp(medium-screen) {
+                    @include font-size($font-size20);
+                }
+            }
+        }
+        p{
+            @include font-size($font-size14);
+            font-weight: 300;
+            margin-bottom: $space-15;
+        }
+        .active-btn{
+            position: $po-absolute;
+            left: 100px;
+            right: 100px;
+            bottom: 20px;
+        }
+   }
+
+
+   //   ***************      TESTIMONIAL CAROUSEL LANDING SASS SECTION START     ***************       //
+   .testimonial-sec{
+        width: $full-width;
+        padding: $space-100 $space-0;
+        background-color: $white-color;
+            @include bp(medium-screen) {
+                padding: $space-30 $space-0;       
+            }
+            @include bp(small-screen) {
+                padding: $space-15 $space-0;    
+            }
+            .testimonial-bx{
+                @include border-radius($radius20);
+                border:1px solid #e2e2e2;
+                padding: $space-20;
+                text-align: $text-center;
+                background-color: $white-color;
+                margin: $space-100;
+                @include bp(lartge-screen) {
+                    margin: $space-100 $space-20; 
+                }
+                @include bp(medium-screen) {
+                    margin: $space-100 $space-15; 
+                }
+                @include bp(small-screen) {
+                    margin: $space-50 $space-15; 
+                }
+                figure{
+                    width: 150px;
+                    @include border-radius($radius100);
+                    display: $d-inlineBlock;
+                    vertical-align: top;
+                    margin-top: -80px;
+                    @include bp(medium-screen) {
+                        width: 100px;
+                        margin-top: -50px;
+                    }
+                    @include bp(small-screen) {
+                        width: 65px;
+                        margin-top: -35px;
+                    }
+                    img{
+                        @include border-radius($radius100);
+                    }
+                }
+                h3{
+                    @include font-size($font-size20);
+                    font-weight: 500;
+                }
+                span{
+                    @include font-size($font-size16);
+                    font-weight: 400;
+                }
+                p{
+                    @include font-size($font-size14);
+                    font-weight: 300;
+                    margin-top: $space-20;
+                    line-height: 26px;
+                }
+            }
+        .owl-item{
+            &.active{
+                .testimonial-bx{
+                    background-color: #f7f6f6;
+                }
+            }
+        }
+   }
+
+
+   //   ***************      HAVE QUESTION LANDING SASS SECTION START     ***************       //
+   .faq-sec{
+       width: $full-width;
+       padding: $space-100 $space-0;
+       background-color: $faq-bg-color;
+            @include bp(medium-screen){
+                padding: $space-50 $space-0;
+            }
+            @include bp(medium-screen){
+                padding: $space-30 $space-0;
+            }
+       h2{
+            @include font-size($font-size42);
+            font-weight: 900;
+            letter-spacing: 0.5px; 
+            margin-top: $space-0;
+            text-align: $text-center;
+            margin-bottom: $space-30;
+            @include bp(medium-screen) {
+                @include font-size($font-size42);
+                margin-bottom: $space-20;      
+            }
+            @include bp(small-screen) {
+                @include font-size($font-size30);
+                margin-bottom: $space-10;
+            }
+        }
+        .accordion-item{
+            &:nth-child(odd){
+                
+                .accordion-header{
+                    background-color: $white-color;
+                }
+            }
+            .accordion-header{
+                
+                .accordion-button{
+                    border:none;
+                    box-shadow: none;
+                    outline: 0;
+                    background-color: transparent;
+                    @include font-size($font-size18);
+                    font-weight: 500;
+                    color: $heading-color;
+                    padding: $space-30;
+                    position: $po-relative;
+                    width: $full-width;
+                    text-align: $text-left;
+                    cursor: pointer;
+                    @include bp(medium-screen){
+                        @include font-size($font-size16);
+                    }
+                    @include bp(small-screen){
+                        padding: $space-30 $space-20;
+                    }
+
+                    &:before{
+                        position: $po-absolute;
+                        width: 30px;
+                        right: 30px;
+                        height: 2px;
+                        background-color: $heading-color;
+                        content: '';
+                        top: 40px;
+                        @include transition(all 0.5s ease-out 0s);
+                        @include bp(small-screen){
+                            right: 20px;
+                        }
+                    }
+                    &:after{
+                        position: $po-absolute;
+                        right: 44px;
+                        top: 26px;
+                        background-color: $heading-color;
+                        height: 30px;
+                        width: 2px;
+                        content: '';
+                        @include transition(all 0.5s ease-out 0s);
+                        @include bp(small-screen){
+                            right: 34px;
+                        }
+                    }
+                    &[aria-expanded="true"]{
+                        &::after{
+                            transform: rotate(90deg);
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+            .collapse{
+                padding: $space-30;
+                @include font-size($font-size16);
+                font-weight: 300;
+                line-height: 38px;
+                @include bp(small-screen){
+                    @include font-size($font-size14);
+                    line-height: 28px;
+                    padding: $space-30;
+                }
+            }
+            >div{
+                &[role="tabpanel"]{
+                    padding: $space-30;
+                    @include font-size($font-size16);
+                    font-weight: 300;
+                    line-height: 38px;
+                    @include bp(small-screen){
+                        @include font-size($font-size14);
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+   }
+
+   .inner-sec{
+       width: $full-width;
+       padding: $space-55 * 2 $space-0;
+       h1{
+           @include font-size($font-size30);
+           font-weight: 900;
+           margin-top: -50px;
+           padding-left: $space-15;
+           position: $po-relative;
+           top: -10px;
+           @include bp(medium-screen){
+            margin-top: $space-15;
+            @include font-size($font-size24);
+            top:0;
+           }
+       }
+       h6{
+        @include font-size($font-size16);
+        font-weight: 500;
+        margin-top: -34px;
+        padding-left: $space-15;
+        position: $po-relative;
+        top: -10px;
+        @include bp(medium-screen){
+         margin-top: $space-15;
+         top:0;
+        }
+    }
+       @include bp(medium-screen){
+            padding: $space-50 $space-0;
+       }
+       @include bp(small-screen){
+            padding: $space-20 $space-0;
+       }
+   }
+   .minheight{
+       min-height: 530px;
+       @include bp(small-screen){
+           min-height: inherit;
+       }
+   }
+   .user-pro-outer{
+       padding: $space-40;
+       @include bp(medium-screen){
+        padding: $space-30;
+        }
+        @include bp(small-screen){
+            padding:$space-30 $space-15;
+        }
+        .profile-img{
+            figure{
+                width: 190px;
+                display: $d-inlineBlock;
+                vertical-align: middle;
+                @include border-radius($radius100);
+                text-align: $text-center;
+                line-height: 1;
+                margin-bottom: $space-0;
+                box-shadow: 0 0 100px 0 rgba($color: $purple-color, $alpha: 0.22);
+                @include bp(lartge-screen){
+                    width: 150px;
+                }
+                @include bp(small-screen){
+                    width: 170px;
+                }
+                img{
+                    @include border-radius($radius100);
+                }
+            }
+        }
+        .profile-info{
+            position: $po-relative;
+            padding-left: $space-20;
+            @include bp(small-screen){
+                padding: $space-0;
+                text-align: $text-center;
+            }
+            h3{
+                @include font-size($font-size24);
+                font-weight: 500;
+                margin-bottom: $space-15;
+            }
+            span{
+                @include font-size($font-size16);
+                font-weight: 400;
+                display: $d-block;
+                margin-bottom: $space-15;
+                color: $purple-color;
+            }
+            p{
+                @include font-size($font-size16);
+                font-weight: 300;
+                margin-bottom: $space-15;
+            }
+            small{
+                @include font-size($font-size16);
+                font-weight: 300;
+                margin-bottom: $space-15;
+                display: $d-block;
+                width: 40%;
+                @include bp(small-screen){
+                    width: $full-width;
+                }
+                i{
+                    margin-right: $space-15;
+                    @include font-size($font-size20);
+                    vertical-align: middle;
+                }
+            }
+            .circle-btn{
+                position: $po-absolute;
+                right: 0;
+                top: 10px;
+                @include bp(small-screen){
+                    position: $po-static;
+                }
+                a{
+                    @include bp(small-screen){
+                        margin:$space-10 auto;
+                    }
+                }
+            }
+        }
+        h4{
+            @include font-size($font-size16);
+            font-weight: 500;
+        }
+        .edit-interest{
+            .flat-checkbox{
+                width: 33.33%;
+                @include bp(medium-screen){
+                    width: $full-width;
+                }
+            }
+        }
+    }
+    .left-menu{
+        position: $po-stick;
+        top: 105px;
+        @include bp(small-screen){
+            border-radius: 0 0 20px 20px;
+        }
+        ul{
+            li{
+                a{
+                    @include font-size($font-size20);
+                    font-weight: 300;
+                    padding: $space-20;
+                    border-bottom: 1px solid #f2f2f2;
+                    display: $d-block;
+                    @include bp(lartge-screen){
+                        padding: $space-15 $space-20;
+                        @include font-size($font-size18);
+                    }
+                    
+                    @include bp(small-screen){
+                        padding: $space-10 $space-15;
+                        @include font-size($font-size16);
+                    }
+                    &.active{
+                        color: $purple-color;
+                    }
+                }
+            }
+        }
+    }
+    .lft-nav{
+        h2{
+            border-bottom: 1px solid #f2f2f2;
+            padding: $space-20;
+            margin:0;
+            @include font-size($font-size16);
+            font-weight: 500;
+        }
+        .filter-interest{
+            padding: $space-20 $space-10;
+            .flat-checkbox{
+                padding: $space-10 $space-20;
+            }
+        }
+        .filter-interest{
+            padding: $space-20 $space-10;
+            .flat-radiobtn{
+                padding: $space-10 $space-20;
+            }
+        }
+    }
+
+.upload-profile{
+    margin-bottom: $space-30;
+    figure{
+        position: $po-relative;
+        width: 120px;
+        height: 120px;
+        display: $d-table;
+        @include border-radius($radius100);
+        background-color: $inner-body;
+        text-align: $text-center;
+        cursor: pointer;
+        input[type="file"]{
+            position: $po-absolute;
+            left: 0;
+            top: 0;
+            width: $full-width;
+            height: $full-height;
+            opacity: 0.01;
+            -webkit-opacity: 0.01;
+            -moz-opacity: 0.01;
+            -ms-opacity: 0.01;
+            -o-opacity: 0.01;
+            cursor: pointer;
+        }
+        small{
+            @include font-size($font-size16);
+            font-weight: 300;
+            letter-spacing: 2px;
+            display: $d-cell;
+            vertical-align: middle;
+        }
+    }
+}
+.ssn-txt{
+    position: $po-absolute;
+    right: 15px;
+    top: 15px;
+    color: $purple-color;
+    @include font-size($font-size12);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+
+}
+
+.mycontent-bx{
+    width: $full-width;
+    padding: $space-30;
+
+    .content-img{
+        background-color: $white;
+        @include border-radius($radius10);
+        border:1px solid #f0f0f0;
+        box-shadow: 0 0 80px 0 rgba($color: $purple-color, $alpha: 0.15);
+        width: 90px;
+        height: 90px;
+        margin:0px auto;
+        display: $d-table;
+        margin-bottom: $space-20;
+        figure{
+            display: $d-cell;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            @include border-radius($radius100);
+            
+        }
+    }
+    h2{
+        @include font-size($font-size18);
+        font-weight: 700;
+        position: $po-relative;
+        margin-bottom: $space-30;
+        &:after{
+            position: $po-absolute;
+            left:0;
+            right:0;
+            bottom: -13px;
+            background-color: $purple-color;
+            width: 20px;
+            height: 1px;
+            margin:0px auto;
+            content: '';
+        }
+    }
+    span{
+        @include font-size($font-size16);
+        font-weight: 300;
+        color: $text-color;
+    }
+    .content-icons{
+        .circle-btn{
+            margin:$space-15 $space-10;
+            .font18{
+                padding: $space-10 $space-0;
+            }
+            .icon-like{
+                color: $red-color;
+                font-size: $space-20;
+            }
+            
+        }
+        @include bp(small-screen){
+            text-align: center !important;
+            
+        }
+    }
+}
+.mydownload-bx{
+    width: $full-width;
+    padding: $space-20;  
+    @include bp(small-screen){
+        text-align: center !important;
+    }
+    .content-img{
+        background-color: $white;
+        @include border-radius($radius10);
+        border:1px solid #f0f0f0;
+        box-shadow: 0 0 80px 0 rgba($color: $purple-color, $alpha: 0.15);
+        width: 90px;
+        height: 90px;
+        display: $d-table;
+        margin:0;
+        margin-bottom: $space-0;
+        @include bp(small-screen){
+            margin:0px auto;
+        }
+        figure{
+            display: $d-cell;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            @include border-radius($radius100);
+            img{
+                @include border-radius($radius100);
+            }
+        }
+    }
+    h2{
+        @include font-size($font-size18);
+        font-weight: 700;
+        position: $po-relative;
+        margin-bottom: $space-10;
+        margin-top: 10px;
+    }
+    h5{
+        @include font-size($font-size16);
+        font-weight: 400;
+        position: $po-relative;
+        margin-top: $space-10;
+        margin-bottom: $space-10;
+    }
+    span{
+        @include font-size($font-size16);
+        font-weight: 300;
+        color: $text-color;
+    } 
+    .content-info{
+        padding-left: $space-20;
+        width: $full-width;
+        max-width: 67%;
+        @include bp(small-screen){
+            padding: $space-10 $space-0;
+            text-align: center !important;
+            max-width: $full-width;
+        }
+    }
+    .circle-btn {
+        a{
+            margin: 0px auto;
+            &.isdisabled{
+                color: $text-color;
+                cursor: not-allowed;
+                opacity: 0.4;
+                text-decoration: none;
+            }
+        }
+    }
+    .circle-btn{
+        margin:$space-0 $space-5;
+        @include bp(small-screen){
+            display: $d-inlineBlock;
+            vertical-align: middle;
+            margin:$space-5;
+        }
+        .font18{
+            padding: $space-10 $space-0;
+        }
+        .icon-like{
+            color: $red-color;
+            font-size: $space-20;
+        }
+    }
+    .purchase-rgt-bx{
+        text-align: right;
+        @include bp(small-screen){
+           text-align: center;
+        }
+        p{
+            margin:0;
+            line-height: 1;
+            a{
+                color: $purple-color;
+                font-size: $font-size13;
+                font-weight: 300;
+                text-decoration: underline;
+            }
+        }
+        small{
+            font-size: $font-size12;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 0.4;
+        }
+    }
+}
+
+.notfound-screen{
+    h6{
+        @include font-size($font-size24);
+        font-weight: 300;
+        position: $po-relative;
+        margin-bottom: $space-40;
+    }
+}
+
+.upgrade-plan{
+    .member-plan-bx{
+        width: 95%;
+        margin:0px auto;
+        margin-bottom: $space-30;
+        @include bp(lartge-screen){
+            width: 100%;
+        }
+        h4{
+            @include bp(lartge-screen){
+                @include font-size($font-size20);
+            }
+        }
+        h2{
+            @include font-size($font-size52);
+            @include bp(lartge-screen){
+                @include font-size($font-size32);
+            }
+        }
+        .active-btn{
+            left: 0;
+            right: 0;
+        }
+        &.selected{
+            background-color: #332c3c;
+            h4{
+                color: $white-color;
+            }
+            h2{
+                color: $white-color;
+                
+                sub{
+                    color: $white-color;
+                }
+            }
+            p{
+                color: $white-color;
+            }
+            .outer-main-btn{
+                border-color: $white-color;
+                color: $white-color;
+                &:hover{
+                    background-color: transparent;
+                    border-color: $white-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .note-info{
+        font-size: $font-size13;
+        color: $text-color;
+    }
+}
+
+.mynotification-sec{
+    ul{
+        padding: $space-20;
+        width: $full-width;
+        @include bp(small-screen){
+            padding: $space-20 $space-0;
+        }
+        li{
+            display: $d-table;
+            width: $full-width;
+            border-bottom: 1px solid #f2f2f2;
+            padding: $space-10 $space-0;
+            margin-bottom: $space-15;
+            @include bp(small-screen){
+                margin-bottom: $space-10;
+                padding: $space-10 $space-15;
+            }
+            figure{
+                display: $d-inlineBlock;
+                vertical-align: top;
+                width: 70px;
+                @include bp(small-screen){
+                    width: 50px;
+                }
+                @include border-radius($radius100);
+                img{
+                    @include border-radius($radius100);
+                }
+            }
+            .mynotify-info{
+                display: $d-cell;
+                vertical-align: top;
+                width: $full-width;
+                position: $po-relative;
+                padding: $space-0;
+                padding-left: $space-20;
+                h4{
+                    @include font-size($font-size16);
+                    font-weight: 500;
+                    margin:0 0 10px 0;
+                    color: $heading-color;
+                        @include bp(small-screen){
+                            @include font-size($font-size14);
+                        }
+                }
+                p{
+                    @include font-size($font-size14);
+                    font-weight: 400;
+                        @include bp(small-screen){
+                            @include font-size($font-size13);
+                        }
+                }
+                small{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: #91969c;
+                    @include font-size($font-size12);
+                    font-weight: 300;
+                }
+            }
+            .setting-bx{
+                span{
+                    @include font-size($font-size20);
+                    font-weight: 300;
+                    @include bp(small-screen){
+                        @include font-size($font-size16);
+                        display: $d-block;
+                        margin-bottom: $space-10;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.switch{
+    position:relative;
+    width:65px;
+    input{
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        background: none;
+        border: 0; clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        overflow: hidden;
+        padding: 0;
+        + label{
+            display:inline-block;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+            vertical-align: middle;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                bottom: 0;
+                display: block;
+                height:25px;
+                right: 0;
+                background-color: #ece8f0;
+                border-radius:30px;
+                border:2px solid #ece8f0;
+                @include transition(all 0.5s ease-out 0s);
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                bottom: 0;
+                display: block;
+                height:25px;
+                top: 5px;
+                left: 6px;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $heading-color;
+                @include transition(all 0.5s ease-out 0s);
+            }
+        }
+        &:checked{
+            + label{
+                &:before{
+                    border-color: $purple-color;
+                    background-color: $purple-color;
+                }
+                &:after{
+                    margin-left:38px;
+                    background-color:#ece8f0;
+                }
+            }
+        }
+    }
+}
+
+
+.summary-dtl{
+    position: relative;
+    h4{
+        margin:0;
+        margin-bottom: $space-0;
+        padding: $space-20 $space-30;
+        border-bottom: 1px solid #f2f2f2;
+        @include font-size($font-size18);
+        font-weight: 700;
+        @include bp(small-screen){
+            @include font-size($font-size16);
+            padding: $space-20 $space-15;
+        }
+    }
+    .add-new{
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        a{
+            color: $purple-color;
+            @include font-size($font-size14);
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+    .method-bx{
+        padding: $space-10 $space-30;
+        @include bp(small-screen){
+            padding: $space-20 $space-15;
+        }
+        em{
+            @include font-size($font-size14);
+            font-weight: 300;
+            font-style: normal;
+        }
+        .pay-style{
+            margin: $space-30 $space-0;
+            @include bp(small-screen){
+                margin: $space-20 $space-0;
+            }
+            span{
+                @include font-size($font-size16);
+                font-weight: 400;
+                @include bp(small-screen){
+                    @include font-size($font-size14);
+                }
+                sub{
+                    bottom: 0;
+                    color: #848484;
+                    @include font-size($font-size14);
+                    font-weight: 300;
+                    @include bp(small-screen){
+                        @include font-size($font-size14);
+                    }
+                }
+            }
+            small{
+                @include font-size($font-size16);
+                font-weight: 500;
+                @include bp(small-screen){
+                    @include font-size($font-size14);
+                }
+                &.purple-color{
+                    color: $purple-color;
+                }
+            }
+        }
+        .table{
+            
+            h5{
+                margin:0;
+                @include font-size($font-size16);
+                font-weight: 300;
+                @include bp(small-screen){
+                    @include font-size($font-size14);
+                }
+            }
+            p{
+                @include font-size($font-size16);
+                font-weight: 300;
+                margin-bottom: 0;
+                @include bp(small-screen){
+                    @include font-size($font-size14);
+                }
+            }
+        }
+        .thistory-bx{
+            max-height: 300px;
+            overflow: auto;
+        }
+    }
+}
+
+.progress {
+    width: $size;
+    height: $size;
+    line-height: $size;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    overflow: inherit;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: $borderWidth solid $border-color-default;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    > span {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+    .progress-left {
+      left: 0;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: $borderWidth;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+      border-color: $border-color-fill;
+    }
+    .progress-left .progress-bar {
+      left: 100%;
+      border-top-right-radius: ($size/2);;
+      border-bottom-right-radius: ($size/2);;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+      //animation: loading-2 1.5s linear forwards 1.8s;
+    }
+    .progress-right {
+      right: 0;
+      .progress-bar {
+        left: -100%;
+        border-top-left-radius: ($size/2);;
+        border-bottom-left-radius: ($size/2);;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        //animation: loading-1 1.8s linear forwards;
+      }
+    }
+    .progress-value {
+        display: flex;
+        border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: 300;
+      div {
+        margin-left: 15px;
+        color: $purple-color;
+        font-weight: 500;
+      }
+      span {
+        font-size: 12px !important;
+        position: absolute;
+        bottom: -20px;
+        color: $green-color;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  /* This for loop creates the 	necessary css animation names 
+  Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+  */
+  @for $i from 1 through $howManySteps {
+      $stepName: ($i*(100 / $howManySteps));
+  
+      //animation only the left side if below 50%
+      @if $i <= ($howManySteps/2) { 
+          .progress[data-percentage="#{$stepName}"] {
+              .progress-right .progress-bar {
+                   animation: loading-#{$i} $animationTime linear forwards;
+              }
+              .progress-left .progress-bar {animation: 0;}
+          }
+      }
+      //animation only the right side if above 50%
+      @if $i > ($howManySteps/2)  {  
+          .progress[data-percentage="#{$stepName}"] {
+              .progress-right .progress-bar {
+                    animation: loading-#{($howManySteps/2)} $animationTime linear forwards; //set the animation to longest animation
+              }
+              .progress-left .progress-bar {
+                    animation: loading-#{$i - ($howManySteps/2)} $animationTime linear forwards $animationTime;
+              }
+          }
+      }
+  }
+  
+  //animation
+  @for $i from 1 through ($howManySteps/2) { 
+      $degrees: (180/($howManySteps/2));
+      $degrees: ($degrees*$i);
+      @keyframes loading-#{$i}{
+      0%{
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100%{
+          -webkit-transform: rotate($degrees);
+              transform: rotate(#{$degrees}deg);
+      }
+      }
+  }
+  //additional styling
+  .progress {
+          margin-bottom: 1em;
+   }
+
+
+   .contact-sec{
+       .contact-form{
+           position: relative;
+           z-index: 10;
+           margin-top: -120px;
+           @include bp(small-screen){
+            margin-top: 15px;
+            }
+       }
+       h1{
+            @include font-size($font-size38);
+            font-weight: 700;
+            text-align: $text-center;
+            margin-bottom: $space-30;
+            @include bp(small-screen){
+                @include font-size($font-size24);    
+                margin-bottom: $space-15;
+            }
+       }
+       h2{
+            @include font-size($font-size48);
+            font-weight: 700;
+            margin: $space-25 $space-0;
+            text-align: $text-center;
+            @include bp(small-screen){
+                @include font-size($font-size28);    
+            }
+        }
+        form{
+            padding:$space-20  $space-30;
+            @include bp(small-screen){
+                padding:$space-15;
+            }
+        }
+        .contact-info{
+            width: $full-width;
+            text-align: $text-center;
+            padding: $space-15 $space-20;
+            margin-bottom: 15px;
+            figure{
+                width:60px;
+                height: 60px;
+                background-color: rgba($color: $purple-color, $alpha: 0.10);
+                @include border-radius($radius100);
+                padding: $space-10 - 2;
+                display: $d-inlineBlock;
+                vertical-align: top;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                
+            }
+            h3{
+                @include font-size($font-size26);
+                font-weight: 700;
+                text-align: $text-center;
+                @include bp(small-screen){
+                    @include font-size($font-size18);    
+                }
+            }
+            p{
+                @include font-size($font-size20);
+                font-weight: 300;
+                @include bp(small-screen){
+                    @include font-size($font-size14);    
+                }
+            }
+        }
+   }
+
+   .static-pages{
+       p{
+        @include font-size($font-size16);
+        font-weight: 300;
+        margin-bottom: $space-20;
+        color: #848484;
+       }
+       ul{
+        margin: $space-20 $space-0;
+        li{
+            @include font-size($font-size16);
+            font-weight: 300;
+            margin-bottom: $space-15;
+            color: #848484;
+        }
+       }
+       h3{
+        @include font-size($font-size24);
+        font-weight: 700;
+        margin-top: $space-30;
+       }
+   }
+   .visually-hidden{
+       display: $d-none;
+   }
